@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateSpan = document.getElementById('current-date');
     if (dateSpan) {
         const today = new Date();
-        const options = { day: 'numeric', month: 'long', year: 'numeric' };
-        dateSpan.textContent = today.toLocaleDateString('pt-BR', options);
+        dateSpan.textContent = today.toLocaleDateString('pt-BR');
     }
 });
